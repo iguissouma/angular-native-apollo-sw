@@ -5,8 +5,8 @@
         "sourceMap": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "noEmitHelpers": true,
-        "noEmitOnError": true
+        "noEmitHelpers": false,
+        "noEmitOnError": false
     },
     "exclude": [
         "node_modules",

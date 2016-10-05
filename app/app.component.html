@@ -1,7 +1,11 @@
-<StackLayout>
-    <Label text="Tap the button" class="title"></Label>
-    
-    <Button text="TAP" (tap)="onTap()"></Button>
-
-    <Label [text]="message" class="message" textWrap="true"></Label>
-</StackLayout>
+<ActionBar [title]="title"></ActionBar>
+<GridLayout rows="*">
+    <ListView [items]="films">
+        <template let-item="item" let-i="index">
+            <StackLayout>
+                <Label textWrap="true" [text]='item.title'></Label>
+                <Label textWrap="true" [text]='item.releaseDate'></Label>
+            </StackLayout>
+        </template>
+    </ListView>
+</GridLayout>
